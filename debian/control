@@ -1,0 +1,31 @@
+Source: testfixtures
+Maintainer: Chris Withers <chris@simplistix.co.uk>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.1
+
+Package: python-testfixtures
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: A collection of helpers and mock objects for unit tests and 
+ ============
+ TestFixtures
+ ============
+ .
+ TestFixtures is a collection of helpers and mock objects that are
+ useful when writing unit tests or doc tests.
+ .
+ If you're wondering why "yet another mock object library", testing is
+ often described as an art form and as such some styles of library will
+ suite some people while others will suite other styles. This library
+ contains common test fixtures the author found himself
+ repeating from package to packages and so decided to extract them into
+ their own library and give them some tests of their own!
+ .
+ The areas of testing this package can help with are listed below:
+ .
+ **Comparing objects and sequences**
+ .
+ Better feedback when the results aren't as you expected along with
+ support for comparison of objects that don't normally support
